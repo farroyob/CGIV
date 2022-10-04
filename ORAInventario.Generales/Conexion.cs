@@ -433,11 +433,14 @@ namespace ORAInventario.Conexion
             catch (OracleException vloExcepcion)
             {
                 RealizarRollBack();
+
                 if (vloExcepcion.Number == 2106 || vloExcepcion.Number == 2627)
                 {
                     String vlcMensaje = "El código ingresado ya existe.";
+
                     return GenerarEnvioInformacion(false, vlcMensaje, 0);
                 }
+
                 return GenerarEnvioInformacion(false, vloExcepcion.Message, 0);
             }
             catch (Exception vloError)
@@ -970,6 +973,7 @@ namespace ORAInventario.Conexion
 
             vloResultado.Estado = pvb_Estado;
             vloResultado.RegistrosAfectados = pvn_RegistrosAfectados;
+            vloResultado.Mensaje = pvc_Mensaje;
 
             return vloResultado;
         }

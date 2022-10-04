@@ -76,6 +76,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generales\prv_General.cs" />
+    <Compile Include="prv_Producto.cs" />
+    <Compile Include="prv_Producto_Categoria.cs" />
     <Compile Include="prv_Sucursal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="prv_Usuario.cs" />

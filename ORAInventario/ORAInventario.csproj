@@ -39,6 +39,7 @@
     <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.Misc.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinStatusBar.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinTabControl.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinToolbars.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
@@ -88,6 +89,12 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ManejoDatos.cs" />
+    <Compile Include="DataSets\ds_Adm_Producto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Adm_Producto.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Administracion\ADMProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +115,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Administracion\ADMProducto.resx">
+      <DependentUpon>ADMProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Otros\FrmConfig.resx">
       <DependentUpon>FrmConfig.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +135,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSets\ds_Adm_Producto.xsc">
+      <DependentUpon>ds_Adm_Producto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ds_Adm_Producto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Adm_Producto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\ds_Adm_Producto.xss">
+      <DependentUpon>ds_Adm_Producto.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -139,10 +160,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\" />
-    <Folder Include="DataSets\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\W_Checked.png" />
   </ItemGroup>

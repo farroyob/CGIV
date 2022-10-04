@@ -55,3 +55,6 @@ X:\Code\v46\CGIV\ORAInventario\ORAInventario\bin\Debug\System.Text.Json.xml
 X:\Code\v46\CGIV\ORAInventario\ORAInventario\bin\Debug\ORAInventario.Logica.dll
 X:\Code\v46\CGIV\ORAInventario\ORAInventario\bin\Debug\ORAInventario.Logica.pdb
 X:\Code\v46\CGIV\ORAInventario\ORAInventario\bin\Debug\ORAInventario.Logica.dll.config
+X:\Code\v46\CGIV\ORAInventario\ORAInventario\bin\Debug\Infragistics4.Win.UltraWinGrid.v17.1.dll
+X:\Code\v46\CGIV\ORAInventario\ORAInventario\bin\Debug\Infragistics4.Win.UltraWinGrid.v17.1.xml
+X:\Code\v46\CGIV\ORAInventario\ORAInventario\obj\Debug\ORAInventario.ADMProducto.resources

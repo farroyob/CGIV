@@ -47,6 +47,8 @@
     <Compile Include="eResultado.cs" />
     <Compile Include="prp_General.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prp_Producto.cs" />
+    <Compile Include="prp_Producto_Categoria.cs" />
     <Compile Include="prp_Sucursal.cs" />
     <Compile Include="prp_Usuario.cs" />
   </ItemGroup>

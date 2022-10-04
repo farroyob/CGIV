@@ -8,6 +8,22 @@ namespace ORAInventario.Logica
     public class prv_Usuario : prv_General
     {
         #region Metodos
+        public eResultado ObtenerCombo(prp_Usuario pvoInfo, ref Conexion.Conexion proConexion)
+        {
+            StringBuilder vlcSql = new StringBuilder();
+
+            vlcSql.AppendLine("SELECT Id AS Codigo");
+            vlcSql.AppendLine("      ,CONCAT(CONCAT(Nombre,' '),Apellido) AS Nombre");
+            vlcSql.AppendLine("FROM Seg_Usuario");
+            vlcSql.AppendLine("ORDER BY Nombre");
+
+            OracleCommand vloCmd = new OracleCommand();
+            vloCmd.CommandText = vlcSql.ToString();
+            vloCmd.Parameters.Clear();
+
+            return proConexion.LlenarDataSet(vloCmd, "Datos");
+        }
+
         public eResultado CargarPropiedades(prp_Usuario pvoInfo, ref Conexion.Conexion proConexion)
         {
             eResultado vloResultado = new eResultado();

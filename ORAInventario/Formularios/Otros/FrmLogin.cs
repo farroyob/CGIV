@@ -275,9 +275,11 @@ namespace ORAInventario
 
             vloDatosConfiguracion.WriteXml(vlcArchivo);            
 
-            this.Close();
-
             Properties.Settings.Default.Ingreso = true;
+            Properties.Settings.Default.Usuario = vloVariables.Id;
+            Properties.Settings.Default.Sucursal = Convert.ToInt32(cboSucursal.Value);
+
+            this.Close();
         }
 
         private void btnConfigurar_Click(object sender, EventArgs e)

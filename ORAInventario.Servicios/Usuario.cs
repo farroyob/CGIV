@@ -29,6 +29,14 @@ namespace ORAInventario.Servicios
         #endregion
 
         #region Metodos
+        public eResultado ObtenerCombo()
+        {
+            Conexion.Conexion vloConexion = new Conexion.Conexion(vccCodigoCadena);
+
+            using (prv_Usuario vloClase = new prv_Usuario())
+                return vloClase.ObtenerCombo(vcoVariables, ref vloConexion);
+        }
+
         public eResultado CargarPropiedades()
         {
             Conexion.Conexion vloConexion = new Conexion.Conexion(vccCodigoCadena);
