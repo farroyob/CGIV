@@ -1,0 +1,5 @@
+X:\Code\v46\CGIV\ORAInventario\ORAInventario.Entidades\bin\Debug\ORAInventario.Entidades.dll
+X:\Code\v46\CGIV\ORAInventario\ORAInventario.Entidades\bin\Debug\ORAInventario.Entidades.pdb
+X:\Code\v46\CGIV\ORAInventario\ORAInventario.Entidades\obj\Debug\ORAInventario.Entidades.csproj.CoreCompileInputs.cache
+X:\Code\v46\CGIV\ORAInventario\ORAInventario.Entidades\obj\Debug\ORAInventario.Entidades.dll
+X:\Code\v46\CGIV\ORAInventario\ORAInventario.Entidades\obj\Debug\ORAInventario.Entidades.pdb

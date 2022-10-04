@@ -9,9 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORAInventario.Entidades", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORAInventario.Servicios", "ORAInventario.Servicios\ORAInventario.Servicios.csproj", "{DDEE1946-7E9D-4843-AAD1-5DF75EF121B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORAInventario.Generales", "ORAInventario.Generales\ORAInventario.Generales.csproj", "{12FD5963-1349-4C85-8806-6815164051D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORAInventario.Conexion", "ORAInventario.Generales\ORAInventario.Conexion.csproj", "{12FD5963-1349-4C85-8806-6815164051D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORAInventario.Logica", "ORAInventario.Logica\ORAInventario.Logica.csproj", "{77BFDC88-6FCB-4009-BF8F-CDB88E215B94}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ORAInventario.Setup", "ORAInventario.Setup\ORAInventario.Setup.vdproj", "{E75F5015-0876-45D5-96D1-87B0FEBED8D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,8 @@ Global
 		{77BFDC88-6FCB-4009-BF8F-CDB88E215B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77BFDC88-6FCB-4009-BF8F-CDB88E215B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77BFDC88-6FCB-4009-BF8F-CDB88E215B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75F5015-0876-45D5-96D1-87B0FEBED8D3}.Debug|Any CPU.ActiveCfg = Debug
+		{E75F5015-0876-45D5-96D1-87B0FEBED8D3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<Configuracion>
+  <Datos>
+    <DBServidor>localhost</DBServidor>
+    <DBBase_Datos />
+    <DBUsuario>system</DBUsuario>
+    <DBClave>5135</DBClave>
+    <Login_Titulo>Login / ORA Inventario</Login_Titulo>
+    <Login_Imagen>C:\Users\farro\Desktop\3.png</Login_Imagen>
+    <Estilo>Nautilus.isl</Estilo>
+    <Estilo_Ubicacion>X:\Code\v46\CGIV\ORAInventario\ORAInventario\bin\Debug\SistemaEstilo2017\</Estilo_Ubicacion>
+    <Ultimo_Usuario>1</Ultimo_Usuario>
+    <Ultimo_Sucursal>1</Ultimo_Sucursal>
+  </Datos>
+</Configuracion>
