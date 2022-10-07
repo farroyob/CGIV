@@ -29,6 +29,7 @@ namespace ORAInventario
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.btnCancelar = new Infragistics.Win.Misc.UltraButton();
             this.btnIngresar = new Infragistics.Win.Misc.UltraButton();
             this.txtUsuario = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
@@ -184,6 +185,7 @@ namespace ORAInventario
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.grbLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

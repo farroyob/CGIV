@@ -34,13 +34,14 @@ namespace ORAInventario
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinEditors.EditorButton editorButton2 = new Infragistics.Win.UltraWinEditors.EditorButton("btnBuscar");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.UltraToolbar ultraToolbar2 = new Infragistics.Win.UltraWinToolbars.UltraToolbar("utb_Principal");
+            Infragistics.Win.UltraWinToolbars.UltraToolbar ultraToolbar1 = new Infragistics.Win.UltraWinToolbars.UltraToolbar("utb_Principal");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool2 = new Infragistics.Win.UltraWinToolbars.ButtonTool("tlb_Guardar");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool3 = new Infragistics.Win.UltraWinToolbars.ButtonTool("tlb_Salir");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool5 = new Infragistics.Win.UltraWinToolbars.ButtonTool("tlb_Guardar");
-            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("tlb_Salir");
-            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConfig));
             this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
             this.txtServidor = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.txtClave = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
@@ -277,22 +278,22 @@ namespace ORAInventario
             this.utm_Principal.DockWithinContainerBaseType = typeof(System.Windows.Forms.Form);
             this.utm_Principal.LockToolbars = true;
             this.utm_Principal.ShowQuickCustomizeButton = false;
-            ultraToolbar2.DockedColumn = 0;
-            ultraToolbar2.DockedRow = 0;
+            ultraToolbar1.DockedColumn = 0;
+            ultraToolbar1.DockedRow = 0;
             buttonTool3.InstanceProps.IsFirstInGroup = true;
-            ultraToolbar2.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            ultraToolbar1.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             buttonTool2,
             buttonTool3});
-            ultraToolbar2.Text = "utb_Principal";
+            ultraToolbar1.Text = "utb_Principal";
             this.utm_Principal.Toolbars.AddRange(new Infragistics.Win.UltraWinToolbars.UltraToolbar[] {
-            ultraToolbar2});
+            ultraToolbar1});
             this.utm_Principal.ToolbarSettings.CaptionPlacement = Infragistics.Win.TextPlacement.BelowImage;
-            appearance5.Image = global::ORAInventario.Properties.Resources.W_Save;
-            buttonTool5.SharedPropsInternal.AppearancesSmall.Appearance = appearance5;
+            appearance3.Image = global::ORAInventario.Properties.Resources.W_Save;
+            buttonTool5.SharedPropsInternal.AppearancesSmall.Appearance = appearance3;
             buttonTool5.SharedPropsInternal.Caption = "Guardar";
             buttonTool5.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
-            appearance6.Image = global::ORAInventario.Properties.Resources.W_Logout;
-            buttonTool6.SharedPropsInternal.AppearancesSmall.Appearance = appearance6;
+            appearance4.Image = global::ORAInventario.Properties.Resources.W_Logout;
+            buttonTool6.SharedPropsInternal.AppearancesSmall.Appearance = appearance4;
             buttonTool6.SharedPropsInternal.Caption = "Salir";
             buttonTool6.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
             this.utm_Principal.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
@@ -379,6 +380,7 @@ namespace ORAInventario
             this.Controls.Add(this._PROPreIngreso_Toolbars_Dock_Area_Bottom);
             this.Controls.Add(this._PROPreIngreso_Toolbars_Dock_Area_Top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmConfig";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración";

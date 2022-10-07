@@ -77,6 +77,7 @@ namespace ORAInventario
             Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ADMProducto));
             this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.grdDatos = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.dsAdmProductoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -142,7 +143,7 @@ namespace ORAInventario
             // 
             this.ultraTabPageControl1.Controls.Add(this.grdDatos);
             this.ultraTabPageControl1.Controls.Add(this.grbBusqueda);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
             this.ultraTabPageControl1.Size = new System.Drawing.Size(746, 370);
             // 
@@ -377,7 +378,7 @@ namespace ORAInventario
             // ultraTabPageControl2
             // 
             this.ultraTabPageControl2.Controls.Add(this.ultraGroupBox1);
-            this.ultraTabPageControl2.Location = new System.Drawing.Point(1, 23);
+            this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
             this.ultraTabPageControl2.Size = new System.Drawing.Size(746, 370);
             // 
@@ -704,6 +705,7 @@ namespace ORAInventario
             this.Controls.Add(this._ADMChofer_Toolbars_Dock_Area_Bottom);
             this.Controls.Add(this._ADMChofer_Toolbars_Dock_Area_Top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ADMProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admistración de Productos";

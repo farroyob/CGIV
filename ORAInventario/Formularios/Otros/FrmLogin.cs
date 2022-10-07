@@ -72,6 +72,8 @@ namespace ORAInventario
             vlcUsuario = Convert.ToString(vloDatosConfiguracion.Tables["Datos"].Rows[0]["DBUsuario"]);
             vlcClave = Convert.ToString(vloDatosConfiguracion.Tables["Datos"].Rows[0]["DBClave"]);
 
+            //vlcServidor += ":1521/xe";
+
             Properties.Settings.Default.CadenaConexion = "Data Source=" + vlcServidor + ";User Id=" + vlcUsuario + ";Password=" + vlcClave + ";";
 
             LlenarCombos();
